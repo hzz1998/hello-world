@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			【案例】商城首页
+			
+			需求：使用table表格布局，完成商城首页的布局和显示
+			
+		-->
+		<table width="100%">
+			<tr >
+				<td><img width="100%" src="../img/top_banner.jpg" alt="" >
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%">
+						<tr align="center" ><td><img src="../img/logo.jpg" alt="">
+
+						</td>
+						<td><img src="../img/search.png" align="center"  alt="">
+
+						</td>
+						<td><img src="../img/hotel_tel.png" alt="">
+
+						</td></tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%" bgcolor="#ffc900" height="40px">
+						<tr>
+							<td><a href="#">首页</a></td>
+							<td><a href="#">门票</a></td>
+							<td><a href="#">酒店</a></td>
+							<td><a href="#">香港车票</a></td>
+							<td><a href="#">出境游</a></td>
+							<td><a href="#">国内游</a></td>
+							<td><a href="#">港澳游</a></td>
+							<td><a href="#">抱团定制</a></td>
+							<td><a href="#">全国自由行</a></td>
+							<td><a href="#">收藏排行版</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr width="100%">
+				<td width="100%"><img src="../img/banner_3.jpg"  width="100%"alt=""></td>
+			</tr>
+			<tr>
+				<td>
+					<img src="../img/icon_5.jpg" alt="">黑马精选
+					<hr color="orange">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%">
+						<tr >
+							<td><a href="http://www.baidu.com"><img src="../img/jiangxuan_1.jpg" width="100%"alt=""></a>
+							<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+							<p>¥899</p></td>
+							<td><img src="../img/jiangxuan_1.jpg"width="100%" alt="">
+								<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+								<p>¥899</p></td>
+							<td><img src="../img/jiangxuan_1.jpg"width="100%" alt="">
+								<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+								<p>¥899</p></td>
+							<td><img src="../img/jiangxuan_1.jpg"width="100%" alt="">
+								<p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+								<p>¥899</p></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr >
+				<td width="100%"><img src="../img/icon_6.jpg" alt="">国内游
+					<hr color="orange"></td>
+			</tr>
+			<tr>
+				<td>
+					<table width="100%">
+						<tR><td rowspan="2"><img src="../img/guonei_1.jpg" width="450px"  alt=""></td>
+							<td ><img src="../img/jiangxuan_1.jpg" width="100%"alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+							<td ><img src="../img/jiangxuan_1.jpg" width="100%"alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+							<td ><img src="../img/jiangxuan_1.jpg"width="100%" alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+
+						</tR>
+						<tR>
+							<td ><img src="../img/jiangxuan_1.jpg" width="100%" alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+							<td ><img src="../img/jiangxuan_1.jpg"width="100%" alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+							<td ><img src="../img/jiangxuan_1.jpg" width="100%"alt="">上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</td>
+						</tR>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><tr >
+			<td width="100%"><img src="../img/icon_7.jpg" alt="">境外游
+				<hr color="orange"></td>
+		</tr>
+			<tr>
+				<td>
+					<table width="100%" >
+						<tR><td rowspan="2"><img src="../img/jiangwai_1.jpg" width="480" alt=""></td>
+							<td ><img src="../img/jiangxuan_3.jpg"width="100%" alt=""><p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p></td>
+							<td ><img src="../img/jiangxuan_3.jpg" width="100%"alt=""><p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p></td>
+							<td ><img src="../img/jiangxuan_3.jpg" width="100%"alt=""><p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机</p>)</td>
+
+						</tR>
+						<tR>
+							<td ><img src="../img/jiangxuan_3.jpg" width="100%" alt=""><p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p></td>
+							<td ><img src="../img/jiangxuan_3.jpg" width="100%" alt="">  <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p></td>
+							<td ><img src="../img/jiangxuan_3.jpg"width="100%" alt=""> <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p></td>
+						</tR>
+					</table></td>
+			</tr>
+			<tr>
+				<td><img src="../img/footer_service.png" width="100%"  alt=""></td>
+			</tr>
+			<tr bgcolor="orange" align="center">
+				<td><font size="2" color="gray" >江苏传智播客教育科技股份有限公司 版权所有Copyright 2006-2018, All Rights Reserved 苏ICP备16007882</font></td>
+			</tr>
+		</table>
+	</body>
+</html>
