@@ -1,0 +1,92 @@
+商品:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>'</title>
+</head>
+<body>
+<form action="lianxi7" method="post">
+    一加手机<input type="checkbox" name="good" value="一加手机"><br>
+    小米手机<input type="checkbox" name="good" value="小米手机"><br>
+    华为手机<input type="checkbox"  name="good" value="华为手机"><br>
+    败家之眼<input type="checkbox"  name="good" value="败家之眼"><br>
+<input type="submit" value="保存"><br>
+</form>
+</body>
+</html>
+
+储存:
+
+package lianxi1;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+@WebServlet("/lianxi7")
+public class lianxi7 extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+        HttpSession session = request.getSession();
+        String[] pgood = request.getParameterValues("good");
+        List<String> goods = (List<String>) session.getAttribute("goods");
+        if (goods == null) {
+            goods = new ArrayList<>();
+        }
+        if (pgood != null) {
+            List<String> list = Arrays.asList(pgood);
+            goods.addAll(list);
+        }
+        session.setAttribute("goods",goods);
+    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+}
+
+购物车:
+package lianxi1;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+@WebServlet("/lianxi8")
+public class lianxi8 extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+
+        PrintWriter writer = response.getWriter();
+        HttpSession session = request.getSession();
+        List<String> goods = (List<String>) session.getAttribute("goods");
+       
+        if (goods != null) {
+            for (String s : goods) {
+                writer.println("<h1>"+s+"</h1>");
+
+            }
+        }
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+}
+
